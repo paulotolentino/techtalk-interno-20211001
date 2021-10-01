@@ -73,8 +73,8 @@ const FavoriteEntitiesSection = () => {
         <tbody>
           {favoriteEntities.map((entity) => (
             <tr key={entity.id}>
-              <td>{entity.name}</td>
               <td>{entity.id}</td>
+              <td>{entity.name}</td>
               <td>
                 <button onClick={() => handleRemoveEntity(entity.id)}>
                   Remove
